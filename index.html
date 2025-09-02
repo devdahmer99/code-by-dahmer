@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Desenvolvedor Full Stack</title>
+    <meta name="description" content="Desenvolvedor Full Stack especializado em React, Node.js e tecnologias modernas. Criando experiências digitais excepcionais.">
+    <meta name="author" content="Seu Nome">
+    <meta name="keywords" content="desenvolvedor full stack, react, nodejs, javascript, portfolio, web developer">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portfólio | Desenvolvedor Full Stack">
+    <meta property="og:description" content="Desenvolvedor Full Stack especializado em React, Node.js e tecnologias modernas. Criando experiências digitais excepcionais.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://your-username.github.io/portfolio/assets/profile-hero.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://your-username.github.io/portfolio/assets/profile-hero.jpg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <span>SZ</span>
+                </div>
+                
+                <div class="nav-links desktop-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="nav-settings">
+                    <button class="settings-btn">
+                        <i data-lucide="settings"></i>
+                    </button>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="#home" class="mobile-link">Home</a>
+                <a href="#about" class="mobile-link">About</a>
+                <a href="#projects" class="mobile-link">Projects</a>
+                <a href="#contact" class="mobile-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        🌐 ABOUT ME
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        hey, I'm <span class="text-primary">Eduardo Dahmer</span>
+                        <span class="wave">👋</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Desenvolvedor Full Stack apaixonado por criar experiências digitais 
+                        imersivas e inovadoras que conectam design e funcionalidade.
+                    </p>
+
+                    <!-- Mission Card -->
+                    <div class="mission-card">
+                        <div class="mission-header">
+                            <span class="rocket">🚀</span>
+                            <h3>MINHA MISSÃO</h3>
+                        </div>
+                        <p class="mission-text">
+                            Conectando Design e Desenvolvimento: Onde criatividade encontra funcionalidade, 
+                            e inovação impulsiona o progresso.
+                        </p>
+                        <p class="mission-quote">
+                           Continue em frente, não se acomode. 🚀
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-buttons">
+                        <a href="https://github.com/devdahmer99" class="btn btn-primary">
+                            <i data-lucide="github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/edudahmer" class="btn btn-outline">
+                            <i data-lucide="linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:dahmerlabs@outlook.com" class="btn btn-outline">
+                            <i data-lucide="mail"></i>
+                            Contato
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Card -->
+                <div class="profile-card">
+                    <div class="profile-content">
+                        <img src="assets/profile-hero.jpg" alt="Profile" class="profile-image">
+                        <div class="profile-info">
+                            <h3>Desenvolvedor Full Stack</h3>
+                            <p>Especializado no ecosistema PHP e Laravel e outras tecnologias modernas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Stats -->
+            <div class="github-stats">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Commits</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Repositórios</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Projetos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Anos Codando</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- About Text -->
+                <div class="about-text">
+                    <h2 class="section-title">About me.</h2>
+                    
+                    <div class="about-content">
+                        <p>
+                            Tenho codado por mais de 3 anos, começando minha jornada em 2021. 
+                            Inicialmente, aprendi HTML, CSS e JavaScript para construir websites.
+                        </p>
+                        
+                        <p>
+                            Meu primeiro projeto foi um website simples construído com HTML, CSS 
+                            e JavaScript (~meados de 2021).
+                        </p>
+                        
+                        <p>
+                            Conforme progredi, foquei intensamente em React.js e Next.js. 
+                            Agora, me especializo em construir aplicações SaaS com tecnologias web modernas.
+                        </p>
+                    </div>
+
+                    <div class="about-buttons">
+                        <a href="https://github.com/seu-usuario" class="btn btn-primary">
+                            Ver meu GitHub
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            Entrar em contato
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Studio & Skills -->
+                <div class="about-cards">
+                    <!-- Studio Card -->
+                    <div class="studio-card">
+                        <div class="studio-header">
+                            <div class="studio-logo">SZ</div>
+                            <span class="studio-title">MEU STUDIO</span>
+                        </div>
+                        
+                        <p class="studio-description">
+                            Namaste!🙏 meu portfólio é mais que uma vitrine; é uma janela para 
+                            meu mundo, onde paixão encontra propósito. Descubra meu trabalho.
+                        </p>
+                        
+                        <button class="btn btn-primary btn-full">
+                            <i data-lucide="download"></i>
+                            Download CV
+                        </button>
+                    </div>
+
+                    <!-- Skills Cards -->
+                    <div class="skills-list">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i data-lucide="code"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h3>Desenvolvimento Web</h3>
+                                <p>Construindo websites de alta performance com código limpo e fundamentos sólidos de SEO.</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i data-lucide="palette"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h3>UI/UX Design</h3>
+                                <p>Criando interfaces modernas e intuitivas que engajam e convertem usuários.</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i data-lucide="rocket"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h3>SaaS Development</h3>
+                                <p>Especializando em aplicações SaaS com tecnologias web modernas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Projects.</h2>
+                <p class="section-description">
+                    Explore alguns dos meus projetos recentes abaixo. Para mais projetos, 
+                    visite meu perfil no GitHub.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🛒</div>
+                        <span class="project-status status-active">Em Desenvolvimento</span>
+                    </div>
+                    <h3 class="project-title">Plataforma de E-commerce</h3>
+                    <div class="project-date">
+                        <i data-lucide="calendar"></i>
+                        Janeiro 2024 - Presente
+                    </div>
+                    <p class="project-description">
+                        Sistema completo de e-commerce com painel administrativo, carrinho de compras e integração de pagamentos.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Stripe</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="btn btn-small btn-primary">
+                            <i data-lucide="github"></i>
+                            Código
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i data-lucide="external-link"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <span class="project-status status-completed">Concluído</span>
+                    </div>
+                    <h3 class="project-title">App de Gestão de Projetos</h3>
+                    <div class="project-date">
+                        <i data-lucide="calendar"></i>
+                        Setembro 2023 - Dezembro 2023
+                    </div>
+                    <p class="project-description">
+                        Aplicação SaaS para gerenciamento de projetos com colaboração em tempo real e dashboards analíticos.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Prisma</span>
+                        <span class="tag">Socket.io</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="btn btn-small btn-primary">
+                            <i data-lucide="github"></i>
+                            Código
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i data-lucide="external-link"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎨</div>
+                        <span class="project-status status-completed">Concluído</span>
+                    </div>
+                    <h3 class="project-title">Portfolio Responsivo</h3>
+                    <div class="project-date">
+                        <i data-lucide="calendar"></i>
+                        Junho 2023 - Agosto 2023
+                    </div>
+                    <p class="project-description">
+                        Website portfolio moderno com animações suaves e design responsivo para showcasing de trabalhos.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Tailwind CSS</span>
+                        <span class="tag">Framer Motion</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="btn btn-small btn-primary">
+                            <i data-lucide="github"></i>
+                            Código
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i data-lucide="external-link"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📝</div>
+                        <span class="project-status status-completed">Concluído</span>
+                    </div>
+                    <h3 class="project-title">API de Blog</h3>
+                    <div class="project-date">
+                        <i data-lucide="calendar"></i>
+                        Março 2023 - Maio 2023
+                    </div>
+                    <p class="project-description">
+                        RESTful API completa para sistema de blog com autenticação, CRUD posts e sistema de comentários.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Express.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">Cloudinary</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="btn btn-small btn-primary">
+                            <i data-lucide="github"></i>
+                            Código
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i data-lucide="external-link"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/seu-usuario" class="btn btn-primary btn-large">
+                    Ver Todos os Projetos no GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vamos Trabalhar Juntos.</h2>
+                <p class="section-description">
+                    Tem um projeto em mente? Estou sempre aberto a discutir novas 
+                    oportunidades e colaborações interessantes.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3 class="contact-title">Informações de Contato</h3>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">seuemail@exemplo.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Telefone</p>
+                                    <p class="contact-value">+55 (11) 99999-9999</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Localização</p>
+                                    <p class="contact-value">São Paulo, Brasil</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-note">
+                            <p>
+                                <strong>Tempo de resposta:</strong> Geralmente 
+                                respondo em até 24 horas. Para projetos urgentes, entre em contato via WhatsApp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3 class="contact-title">Envie uma Mensagem</h3>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nome</label>
+                                    <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <input type="text" id="subject" name="subject" placeholder="Sobre o que você gostaria de falar?" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Descreva seu projeto ou ideia..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i data-lucide="send"></i>
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">SZ</div>
+                    <p class="footer-description">
+                        Desenvolvedor Full Stack dedicado a criar experiências digitais 
+                        excepcionais que fazem a diferença.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <div class="footer-nav">
+                        <a href="#home">Home</a>
+                        <a href="#about">Sobre</a>
+                        <a href="#projects">Projetos</a>
+                        <a href="#contact">Contato</a>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <h3 class="footer-title">Conecte-se</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/seu-usuario" class="social-link">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/seu-perfil" class="social-link">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:seuemail@exemplo.com" class="social-link">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                    <p class="footer-email">seuemail@exemplo.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © <span id="currentYear">2024</span> Seu Nome. Todos os direitos reservados.
+                </p>
+                <p class="footer-made-with">
+                    Feito com <i data-lucide="heart" class="heart-icon"></i> e muito café
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
