@@ -966,3 +966,20 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+/* Media query para telas de desktop (>= 768px) */
+@media (min-width: 768px) {
+    
+    /* Centraliza os cards de projetos */
+    .projects-grid {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    /* Ajusta o alinhamento para o botão de CTA */
+    .projects-cta {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem; /* Adiciona um espaço superior entre os cards e o botão */
+    }
+}
