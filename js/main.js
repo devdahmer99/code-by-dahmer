@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Scroll animations
     initScrollAnimations();
+
+    fetchGitHubStats(); 
 });
 
 // Mobile Menu Toggle
@@ -359,6 +361,51 @@ function initLazyLoading() {
     
     images.forEach(img => imageObserver.observe(img));
 }
+
+
+// Function to fetch GitHub stats
+async function fetchGitHubStats() {
+    const username = 'devdahmer99';
+    const reposUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
+
+    const commitsCountElement = document.getElementById('github-commits-count');
+    const reposCountElement = document.getElementById('github-repos-count');
+    const yearsCodingElement = document.getElementById('github-years-coding');
+
+    const commitsStat = document.getElementById('commits-stat');
+    const reposStat = document.getElementById('repos-stat');
+    const yearsStat = document.getElementById('years-stat');
+
+    if (reposCountElement && commitsCountElement && yearsCodingElement) {
+        try {
+            const reposResponse = await fetch(reposUrl);
+            const repos = await reposResponse.json();
+
+            let publicRepos = repos.filter(repo => !repo.fork).length;
+
+            const firstCommitDate = new Date('2021-01-01'); // Your first year coding
+            const currentYear = new Date().getFullYear();
+            const yearsCoding = currentYear - firstCommitDate.getFullYear();
+
+            reposCountElement.textContent = publicRepos;
+            yearsCodingElement.textContent = `${yearsCoding}+`;
+            commitsCountElement.textContent = '80+'; // Static value due to API limitations
+            
+            // Animate items after data is fetched
+            setTimeout(() => { commitsStat.classList.remove('loading'); commitsStat.classList.add('loaded'); }, 100);
+            setTimeout(() => { reposStat.classList.remove('loading'); reposStat.classList.add('loaded'); }, 300);
+            setTimeout(() => { yearsStat.classList.remove('loading'); yearsStat.classList.add('loaded'); }, 500);
+
+        } catch (error) {
+            console.error('Error fetching GitHub stats:', error);
+            // Fallback to static values in case of API error
+            reposCountElement.textContent = '15';
+            yearsCodingElement.textContent = '4+';
+            commitsCountElement.textContent = '80+';
+        }
+    }
+}
+
 
 // Initialize lazy loading
 document.addEventListener('DOMContentLoaded', initLazyLoading);

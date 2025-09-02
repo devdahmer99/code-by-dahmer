@@ -955,3 +955,14 @@ body {
 section {
     scroll-margin-top: 4rem;
 }
+
+.stat-item.loading {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.stat-item.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
