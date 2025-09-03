@@ -983,3 +983,11 @@ section {
         margin-top: 3rem; /* Adiciona um espaço superior entre os cards e o botão */
     }
 }
+
+.github-stats {
+   margin-bottom: 40px; 
+}
+
+.about{
+  padding-top: 20px;  
+}
